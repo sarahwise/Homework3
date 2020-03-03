@@ -12,31 +12,31 @@ function writePassword() {
 //pasword generatorfunction generatePassword() {
 
   window.addEventListener('load', function() {
-    var plength = prompt("How many characters would you like your password to be?");
+    var length = prompt("How many characters would you like your password to be?");
   
-    while (plength < 8 || plength > 128) {
-      plength = prompt("Length must be 8-128 characters. How many characters would you like your password to be?");
+    while (length < 8 || length > 128) {
+      length = prompt("Length must be 8-128 characters. How many characters would you like your password to be?");
     }
   
-    var cuppercase = confirm("Would you like to use uppercase letters?");
-    var clowercase = confirm("Would you like to use lowercase letters?");
-    var cnumbers = confirm("would you like to use numbers?");
-    var csymbols = confirm("would you like to use special characters?");
+    var upperCase = confirm("Would you like to use uppercase letters?");
+    var lowerCase = confirm("Would you like to use lowercase letters?");
+    var numbers = confirm("would you like to use numbers?");
+    var symbols = confirm("would you like to use special characters?");
   
-    while (!(cuppercase || clowercase || cnumbers || csymbols)) {
-      alert("You must select at least one character type!");
+    while (!(upperCase || lowerCase || numbers || symbols)) {
+      alert("ERROR: YOU MUST SELECT A CHARACTER TYPE");
   
-      cuppercase = confirm("Would you like to use uppercase letters?");
-      clowercase = confirm("Would you like to use lowercase letters?");
-      cnumbers = confirm("would you like to use numbers?");
-      csymbols = confirm("would you like to use special characters?");
+      upperCase = confirm("Would you like to use uppercase letters?");
+      lowerCase = confirm("Would you like to use lowercase letters?");
+      numbers = confirm("would you like to use numbers?");
+      symbols = confirm("would you like to use special characters?");
     }
   
     //DOM elements
     const resultEl = document.getElementById('password');
   
     document.getElementById('generate').addEventListener('click', () => {
-      resultEl.value = generatePassword(clowercase, cuppercase, cnumbers, csymbols, plength);
+      resultEl.value = generatePassword(lowerCase, upperCase, numbers, symbols, length);
     });
   
     document.getElementById('clipboard').addEventListener('click', () => {
