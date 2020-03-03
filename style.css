@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -33,11 +33,10 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 3%, 88%);
-  opacity: 95%;
-  border-radius: 5px;
+  background-color: whitesmoke;
+  border-radius: 25px;
   border-width: 1px;
-  color: hsl(206, 17%, 28%);
+  color: gray;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -48,7 +47,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: hsl(0, 3%, 88%);
+  background: whitesmoke;
   height: 2px;
 }
 
@@ -64,7 +63,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: whitesmoke;
   height: 2px;
 }
 
@@ -79,9 +78,7 @@ header {
   font-family: 'Orbitron';
   background-color:orangered;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  color: whitesmoke;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -93,7 +90,7 @@ header {
 
 button[disabled] {
   cursor: default;
-  background: #c0c7cf;
+  background: whitesmoke;
 }
 
 .float-right {
